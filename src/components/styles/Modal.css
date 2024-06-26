@@ -1,0 +1,66 @@
+.modal {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination .page,
+.pagination .prev,
+.pagination .break-me {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pagination .nex {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pagination .page:hover,
+.pagination .prev:hover,
+.pagination .nex:hover,
+.pagination .break-me:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .active {
+  background-color: #0d99ff;
+  color: white;
+  border: 1px solid #0d99ff;
+}
+
+.pagination .disabled {
+  color: #ddd;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
